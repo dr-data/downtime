@@ -7,10 +7,9 @@ hosts:
   - name: https://icollegeweb.biox.space/
     title: iCollege Limited Website
   - name: https://icollegeweb.biox.space/Ecommerce.html
-    title: iCollege Limited Ecommerce
+    title: iCollege Limited Ecommerce system
   - name: https://icollegeweb.biox.space/Booking.html
-    title: iCollege Limited Booking / CRM
-  # Example / test url
+    title: iCollege Limited Booking system
   - name: https://icollegeweb.biox.space/RPA.html
     title: iCollege Limited RPA
   - name: https://icollegeweb.biox.space/AI-chatbot.html
