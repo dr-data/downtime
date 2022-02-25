@@ -22,6 +22,8 @@ See [USAGE.md](/USAGE.md) for more informations.
 
 <!-- <downtime-status> -->
 ![iCollege Limited Website](/status/https---icollegeweb.biox.space--443.svg)
+![iCollege Limited Ecommerce](/status/https---icollegeweb.biox.space-Ecommerce.html-443.svg)
+![iCollege Limited Booking / CRM](/status/https---icollegeweb.biox.space-Booking.html-443.svg)
 ![iCollege Limited RPA](/status/https---icollegeweb.biox.space-RPA.html-443.svg)
 ![iCollege Limited Chatbot](/status/https---icollegeweb.biox.space-AI-chatbot.html-443.svg)
 <!-- <downtime-status/> -->
