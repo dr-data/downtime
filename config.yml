@@ -9,7 +9,7 @@ hosts:
   # Example / test url
   - name: https://icollegeweb.biox.space/RPA.html
     title: iCollege Limited RPA
-   - name: https://icollegeweb.biox.space/AI-chatbot.html
+  - name: https://icollegeweb.biox.space/AI-chatbot.html
     title: iCollege Limited Chatbot 
 
 # Site configuration
