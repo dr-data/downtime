@@ -4,24 +4,18 @@
 # All defaults values can be overriden per host basis
 hosts:
   # Example / test root domain
-  - name: google.com
-    title: Google
+  - name: https://icollegeweb.biox.space/
+    title: iCollege Limited Website
   # Example / test url
-  - name: github.com/lowlighter/downtime
-    title: Downtime repository
-  # Example / test ip with port using ncat
-  - name: "8.8.8.8"
-    title: Google DNS
-    port: 53
-    use: ncat
-  # Example / unavailable website
-  - name: unavailable.website.com
-    title: Unavailable website
+  - name: https://icollegeweb.biox.space/RPA.html
+    title: iCollege Limited RPA
+   - name: https://icollegeweb.biox.space/AI-chatbot.html
+    title: iCollege Limited Chatbot 
 
 # Site configuration
 site:
   # Title
-  title: Downtime
+  title: Downtime iCollege Limited
   # Favicon / logo
   favicon: https://simon.lecoq.io/src/icon.png
   # Refresh rate of status images for client
