@@ -4,16 +4,8 @@
 # All defaults values can be overriden per host basis
 hosts:
   # Example / test root domain
-  - name: https://icollegeweb.biox.space/
-    title: iCollege Limited Website
-  - name: https://icollegeweb.biox.space/Ecommerce.html
-    title: iCollege Limited Ecommerce system
-  - name: https://icollegeweb.biox.space/Booking.html
-    title: iCollege Limited Booking system
-  - name: https://icollegeweb.biox.space/RPA.html
-    title: iCollege Limited RPA
-  - name: https://icollegeweb.biox.space/AI-chatbot.html
-    title: iCollege Limited Chatbot 
+  - name: https://www.beingkowloonemperor.com/
+    title: Being Kowloon Emperor
 
 # Site configuration
 site:
