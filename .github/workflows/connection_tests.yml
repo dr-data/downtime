@@ -15,7 +15,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          fetch-depth: 0  # Fetch all history for all branches and tags
 
       - name: Setup Deno
         uses: denolib/setup-deno@v2
@@ -46,9 +46,9 @@ jobs:
       - name: Forcefully pull and reset to remote state
         run: |
           git fetch origin
-          git reset --hard origin/${{ github.ref }}
-          git clean -fdx
+          git reset --hard origin/master  # Ensures the local branch matches the remote master branch
+          git clean -fdx  # Remove all untracked files and directories
 
       - name: Push changes
         run: |
-          git push origin HEAD:master --force
+          git push origin HEAD:master --force  # Forces the push to the master branch on origin
