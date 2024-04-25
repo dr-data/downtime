@@ -12,10 +12,10 @@ jobs:
   connection-tests:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0  # Ensures the entire history is available
+          fetch-depth: 0
 
       - name: Setup Deno
         uses: denolib/setup-deno@v2
@@ -33,17 +33,22 @@ jobs:
       - name: Perform connection tests
         run: deno run --allow-net --allow-read --allow-write --allow-run --unstable source/tests.ts
 
-      - name: Prepare to commit
-        run: |
-          npx svgo --multipass -f status
-          git add static/site hosts status README.md
+      - name: Optimize SVG files
+        run: npx svgo --multipass -f status
+
+      - name: Add changes to Git
+        run: git add static/site hosts status README.md
 
       - name: Commit results
         run: |
           git commit -m "Update connection status" || echo "No changes to commit"
 
-      - name: Pull latest changes with rebase
-        run: git pull --rebase
+      - name: Forcefully pull and reset to remote state
+        run: |
+          git fetch origin
+          git reset --hard origin/${{ github.ref }}
+          git clean -fdx
 
       - name: Push changes
-        run: git push
+        run: |
+          git push origin HEAD:master --force
