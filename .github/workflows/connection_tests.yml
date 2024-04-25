@@ -20,6 +20,8 @@ jobs:
 
       - name: Setup
         uses: denolib/setup-deno@v2
+        with:
+          deno-version: '1.28.0'
 
       - name: Additional setup
         run: |
